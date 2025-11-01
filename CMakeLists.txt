@@ -1,7 +1,7 @@
 ﻿# CMakeList.txt : CMake project for sdl-gpu-tutorial, include source and define
 # project specific logic here.
 #
-cmake_minimum_required (VERSION 3.25)
+cmake_minimum_required (VERSION 3.24)
 
 # Enable Hot Reload for MSVC compilers if supported.
 
@@ -15,6 +15,7 @@ FetchContent_Declare(
        # This will be a tag once SDL3 is released
         GIT_TAG origin/main
   )
+
 FetchContent_MakeAvailable(SDL3)
 
 FetchContent_Declare(
